@@ -50,6 +50,9 @@ st.subheader('4.2 Graphique de densité de film_rental_rate')
 fig_density = plt.figure()
 # Density plot of film_rental_rate with seaborn
 st.subheader('4.2 Density Plot of film_rental_rate')
+df_cleaned['film_rental_rate'].values
+print(df_cleaned['film_rental_rate'].values)
+
 fig_density = plt.figure()
 sns.histplot(df_cleaned['film_rental_rate'].values, kde=True, color='0.75')
 st.pyplot(fig_density)
