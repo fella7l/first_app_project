@@ -48,7 +48,12 @@ st.write("Moyenne :", df_cleaned['film_rental_rate'].mean().round(2))
 # Graphique de densité de film_rental_rate avec seaborn
 st.subheader('4.2 Graphique de densité de film_rental_rate')
 fig_density = plt.figure()
-sns.histplot(df_cleaned['film_rental_rate'], kde=True, color='0.75')
+# Density plot of film_rental_rate with seaborn
+st.subheader('4.2 Density Plot of film_rental_rate')
+fig_density = plt.figure()
+sns.histplot(df_cleaned['film_rental_rate'].values, kde=True, color='0.75')
+st.pyplot(fig_density)
+
 st.pyplot(fig_density)
 
 # Graphique à barres de film_rental_rate
